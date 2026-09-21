@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — GSOM FLOW BETA</title>
+  <style>
+    body { margin: 0; font: 16px/1.55 system-ui, Segoe UI, sans-serif; color: #1e2126; background: #f2f2f2; }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; background: #fff; box-shadow: 0 8px 24px rgba(0,0,0,.06); }
+    h1 { font-size: 1.75rem; margin: 0 0 8px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+    p, li { color: #333; }
+    .meta { color: #5c6168; font-size: .95rem; margin-bottom: 24px; }
+    table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+    th, td { border: 1px solid #dadde1; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #f2f2f2; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy — GSOM FLOW BETA</h1>
+  <p class="meta">Last updated: 2026-09-21 · Product version 0.9.0</p>
+
+  <h2>Who we are</h2>
+  <p>GSOM FLOW is an <strong>independent</strong> student dashboard Chrome extension. It is <strong>not</strong> affiliated with, endorsed by, or officially connected to POLIMI Graduate School of Management or Politecnico di Milano.</p>
+
+  <h2>Single purpose</h2>
+  <p>Display academic data available in the authenticated student’s FLOW browser session in a single local dashboard.</p>
+
+  <h2>What the extension accesses</h2>
+  <p>When you are already logged in to GSOM FLOW in Chrome (<code>https://www.gsom.polimi.it</code>), the extension reads Flow API responses available to your browser session for courses, calendar/lessons, clips, assignments, attendance-related calendar events, and document metadata.</p>
+  <p>Access uses the browser’s existing authenticated session. The extension does not ask for a password and does not use <code>chrome.cookies</code> or read cookie values.</p>
+
+  <h2>Where processing happens</h2>
+  <p>All processing happens locally in your browser (extension service worker and dashboard pages).</p>
+
+  <h2>What is stored locally</h2>
+  <p>Using <code>chrome.storage.local</code>, the extension may store a short-lived dashboard cache/view-model, a minimized change-detection snapshot (entity IDs/fingerprints and timestamps), and lightweight collection metadata.</p>
+  <p>The extension does not intentionally store cookies, authentication tokens, Authorization headers, passwords, or full raw API payloads.</p>
+
+  <h2>What is NOT collected by the developer</h2>
+  <ul>
+    <li>No data is sent to the developer.</li>
+    <li>No analytics, advertising, or telemetry SDKs are included.</li>
+    <li>No remote logging backend is operated by this extension.</li>
+    <li>No account is created with the developer.</li>
+  </ul>
+  <p>Network requests made by the extension go only to <code>https://www.gsom.polimi.it</code> to fetch your Flow data for local display.</p>
+
+  <h2>Permissions explained</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><code>storage</code></td><td>Local cache/snapshot so the dashboard can load without re-fetching on every open.</td></tr>
+      <tr><td>Host access to <code>https://www.gsom.polimi.it/*</code></td><td>Call Flow APIs in your authenticated browser session.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Data deletion</h2>
+  <p>Remove the extension from Chrome, or clear the extension’s storage via Chrome’s extension details / site data controls.</p>
+
+  <h2>Children’s privacy</h2>
+  <p>This extension is intended for adult students of a graduate / executive program. It is not directed at children.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes materially, the version in the extension package / Store listing will be updated.</p>
+
+  <h2>Contact</h2>
+  <p>Use the support email published in the Chrome Web Store listing for GSOM FLOW BETA.</p>
+</main>
+</body>
+</html>
